@@ -1,4 +1,4 @@
-package pro07.sec01.ex01;
+package pro07.sec02.ex01;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 
-//@WebServlet("/member")
+@WebServlet("/member4")
 public class MemberServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
@@ -31,7 +31,7 @@ public class MemberServlet extends HttpServlet {
 		for(int i=0; i < list.size(); i++) {
 			MemberVO memberVO  = (MemberVO) list.get(i);
 			String id = memberVO.getId();
-			String pwd = memberVO.getPwd();
+			String pwd = memberVO.getPw();
 			String name = memberVO.getName();
 			String email = memberVO.getEmail();
 			Date joinDate = memberVO.getJoinDate();

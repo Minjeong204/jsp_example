@@ -1,4 +1,4 @@
-package pro07.sec01.ex01;
+package pro07.sec02.ex02;
 
 import java.sql.Date;
 
@@ -39,6 +39,5 @@ public class MemberVO {
 	public void setJoinDate(Date joinDate) {
 		this.joinDate = joinDate;
 	}
-
 
 }

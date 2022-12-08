@@ -33,7 +33,7 @@ public class MemberDAO {
 				Date joinDate = rs.getDate("joinDate");
 				MemberVO vo = new MemberVO();
 				vo.setId(id);
-				vo.setPw(pwd);
+				vo.setPwd(pwd);
 				vo.setName(name);
 				vo.setEmail(email);
 				vo.setJoinDate(joinDate);
@@ -60,6 +60,13 @@ public class MemberDAO {
 			System.out.println("Statement 생성 성공");
 		} catch (Exception e) {
 			e.printStackTrace();
+		}
+	}
+	public void addMember(MemberVO memberVO) {
+		try {
+//			con = dataFactory.getConnection();
+		} catch (Exception e) {
+			// TODO: handle exception
 		}
 	}
 }
